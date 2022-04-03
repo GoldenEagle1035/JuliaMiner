@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LY3MNGP3B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9LY3MNGP3B');
+</script>
+     <!-- End Google Tag Manager -->
+ 
+     <meta charset="utf-8">
+     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 
+     <meta property="og:title" content="The BNB Miner">
+     <meta property="og:description" content="Smart way to grow your BNB on the Binance Smart Chain.">
+     <meta name="description" content="Smart way to grow your BNB on the Binance Smart Chain.">
+     <meta property="og:image" content="assets/img/banner.png">
+     <meta property="og:url" content="https://bnb.unitedcapital.live/">
+     <meta property="og:site_name" content="UnitedCapital">
+     <meta name="twitter:card" content="summary_large_image">
+
+    <title>The BNB Miner</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/cropslogo.PNG" rel="icon" type="image/png">
+    <link href="assets/img/cropslogo.PNG" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styleNew.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+
+  <style>
+    .icon-connect,
+    .icon-copy,
+    .icon-copy-green {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: cover;
+      background-image: url(./assets/img/sprite.svg);
+    }
+
+    .icon-connect {
+      background-position: -504px;
+      -webkit-animation: rotating 0.5s infinite;
+      animation: rotating 0.5s infinite;
+    }
+
+    @-webkit-keyframes rotating {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      0% {
+        transform: rotate(180deg);
+      }
+    }
+
+    @keyframes rotating {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      0% {
+        transform: rotate(180deg);
+      }
+    }
+
+    .btn {
+      width: 200px;
+    }
+  </style>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+
+        <h1 class="logo me-auto me-lg-0"><img
+              style="height: 80%; width: 30px; padding-right: 2px;  font-family: cursive;"
+              src="assets/img/cropslogo1.PNG" alt=""> United Capital</h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <li>
+                <a class="nav-link" href="https://bscscan.com/address/0x9a7000641fc4e6ad800d041b27b7d3e0d46ff6aa"
+                  target="_blank"><img style="height: 100%; width: 18px;" alt=""
+                    src="assets/img/bsc.png">&nbsp; <strong> Contract</strong></a>
+  
+              </li>
+              <li>
+              <a class="nav-link" href="https://telegram.org/" target="_blank"><img class="nav-logo" id="telegram"
+                  alt="" src="assets/img/telegram.svg"><strong>Telegram</strong></a>
+            </li>
+            <li>
+              <a class="nav-link">
+                <button id="enableMetamask" class="btn connect-btn">Connect Wallet</button>
+              </a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header> <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class=container>
+        <div class="row" style="margin: 0 auto;">
+          <!-- <div class="big-timer" id="start-container">
+	  <i class="bi bi-clock icon-custom"></i>
+          <strong id="start-timer">00:00:00:00</strong>
+        </div> -->
+        </div>
+        <div class="content-box">
+            <div class="row info-container" style="padding: 0px;">
+              <div class=" info-container-2 d-flex flex-wrap justify-content-center ">
+                <div class="col-md-2 d-flex align-items-center justify-content-sm-center">
+                  &nbsp;  &nbsp; <img class="d-flex justify-content-md-start " id="logo-space" src="./assets/img/cropslogo.PNG" alt=""
+                    width="90" height="90">
+                </div>
+                <div class="col-md-8 col-sm-12 d-flex align-items-center justify-content-center">
+                  <div>
+                    <div class="d-flex flex-column ">
+                      <span class="busd text-center "
+                        style="-webkit-text-stroke: 1px #f09341; color:black; letter-spacing: 2px; margin-left: 5px;font-size: 1.95rem;">
+                       The BNB Miner
+                       </span>
+                      <h2 class="text-center" style="max-width: 328px; font-weight: 200;"><br> Smart way to grow your <span
+                        class="busd" style="color: #fcb383; font-weight: 300;">BNB</span> on <br> Binance Smart Chain. 
+                         </h2>
+                    </div>
+                  </div>
+                </div>
+                <div><br>
+                  <iframe src="https://free.timeanddate.com/countdown/i8mpi6pv/cf12/cm0/cu4/ct2/cs0/ca0/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs110/szw320/szh135/iso2022-12-22T20:00:00" allowtransparency="true" frameborder="0" width="105" height="32"></iframe>
+
+              </div>
+              </div>
+              <div class="row stats-row-container " >
+                <div class="col-md-6">
+                  <br>
+                  <br>
+                  <h3 class="text-start busd"
+                    style="color:#fcb383; letter-spacing: 2px; margin-left: 5px;font-size: 1.7rem; ">Statistics</h3>
+                  <hr>
+                  <div class="col-md-2 stat  mb-md-2">
+                    <div class="header">
+                      <i class="bi-bank" style="color: var(--token); font-size: 16px; margin-left: 10px;"></i>
+                      Contract Balance <i class="bi bi-question-circle "
+                        style="font-size: 12px; color: rgb(198, 255, 252); margin-left: 5px;"></i>
+                      <div>
+                        <strong class="number  mb-md-2 busd"
+                          style="-webkit-text-stroke: 1px #fcb383; color:#fcd383; letter-spacing: 2px; margin-left: 20px;font-size: 1.4rem;"
+                          id="contract-balance">-</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2 stat mb-md-2 ">
+                    <div class="header">
+                      <i class="bi-bank" style="color: var(--token); font-size: 16px; margin-left: 10px;"></i>
+                      Total Staked<i class="bi bi-question-circle "
+                        style="font-size: 12px; color: rgb(198, 255, 252); margin-left: 5px;"></i>
+                      <div>
+                        <strong class="number busd"
+                          style="-webkit-text-stroke: 1px #fcb383; color:#fcd383; letter-spacing: 2px; margin-left: 20px;font-size: 1.4rem;"
+                          id="total-staked">-</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2 stat  mb-md-2">
+                    <div class="header">
+                      <i class="bi-bank" style="color: var(--token); font-size: 16px; margin-left: 10px;"></i>
+                      Referral Rewards <i class="bi bi-question-circle "
+                        style="font-size: 12px; color: rgb(198, 255, 252); margin-left: 5px;"></i>
+                      <div>
+                        <strong class="number  mb-md-2 busd"
+                          style="-webkit-text-stroke: 1px #fcb383; color:#fcd383; letter-spacing: 2px; margin-left: 20px;font-size: 1.4rem;"
+                          id="total-ref">-</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 ms-md-5 my-1">
+                  <br>
+                  <br>
+                  <h3 class="text-start busd"
+                    style=" color:#fcb383;  letter-spacing: 2px; margin-left: 5px;font-size: 1.5rem;">Benefits</h3>
+                  <hr>
+                  <div class="stats mt-md-3">
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom "></i>
+                      <span id="daily-rate">10% Daily ~ 3650% APR</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus">10% Referrals</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="daily-compound">Up to 50% Compound Bonus</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus"><span id="compound-step">24</span> Hours Compound Timer</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus"><span id="cut-off-step">48</span> Hours Rewards Accumulation Cut-Off</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus"><span id="withdraw-cooldown">0</span> Hours Withdraw Cooldown</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus"><span id="no-tax-compound-count">0</span> Times Mandatory Compound
+                        Feature</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus">0% Feedback Tax For Early Withdrawals.</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus">5% Fee</span>
+                    </h4>
+                    <h4 class="mb-4 mb-sm-0">
+                      <i class="bi bi-check-square-fill icon-custom"></i>
+                      <span id="ref-bonus">Ownership Renounced at Launch </span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+      <section id="mine" class="d-flex">
+        <div class="container main">
+          <div class="row justify-content-center">
+            <div class="col-xl-12 col-md-12 disclaimer">
+            </div>
+          </div>
+          <div class="content-box ">
+            <h3 class="text-start busd"
+              style="color:var(--token); letter-spacing: 2px; font-size: x-large; font-family: cursive !important;display: flex;justify-content: center;font-weight: 700;">
+              User Dashboard</h3>
+            <hr>
+            <div class="row stats-row-container justify-content-center">
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-bank" style=" font-size: 16px;" ;></i>
+                  <span>Initial Deposit</span>
+                </div>
+                <strong id="initial-deposit" class="number">0</strong>
+                <div>
+                  <strong class="busd">BNB</strong>
+                </div>
+                <!-- <div class="usd">
+                ≈ $<span id="initial-deposit-usd" >0 </span> USD
+              </div> -->
+              </div>
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-bank"></i>
+                  Total Deposit
+                </div>
+                <strong id="total-deposit" class="number">0</strong>
+                <div>
+                  <strong class="busd">BNB</strong>
+                </div>
+                <!-- <div class="usd">
+                ≈ $<span id="total-deposit-usd" >0 </span> USD
+              </div> -->
+              </div>
+              <div class="col-md-2 stat">
+                <div class="header">
+                  <i class="bi-wallet2"></i>
+                  Withdrawn
+                </div>
+                <div>
+                  <strong id="total-withdrawn" class="number">0</strong>
+                </div>
+                <div>
+                  <strong class="busd">BNB</strong>
+                </div>
+                <!-- <div class="usd">
+                ≈ $<span id="total-withdrawn-usd" >0 </span> USD
+              </div> -->
+              </div>
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-people"></i>
+                  Referrals
+                  (<span id="ref-count">0</span>)
+                </div>
+                <div>
+                  <strong id="ref-rewards-bnb" class="number">0</strong>
+                </div>
+                <div>
+                  <strong class="busd">BNB</strong>
+                </div>
+                <!-- <div class="usd">
+                ≈ $<span id="ref-rewards-usd" >0 </span> USD
+              </div> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 first-box" style="margin-top: 5px;">
+                <div class="deposit-container">
+                  <div class="row example">
+                    <div class="col-lg-8">
+                      <div style="line-height: 1.4; font-size: 14px;">
+                        <strong>
+                          Hiring Example
+                        </strong>
+                        <div>
+                          <div>
+                            100 <span class="busd">BNB</span>
+                            = <span id="example-miners">0 </span> Miners
+                          </div>
+                          <!-- <div>
+                          <i class="bi-minecart"></i>
+                        </div> -->
+                          <div>
+                            <i class="ri-coins-line ri-1x"></i>
+                            Daily Yield:
+                            <span id="example-bnb">0</span><span class="busd"> BNB</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="wallet">
+                        <i class="bi-wallet2"></i>
+                        <strong>Wallet</strong>
+                        <div>
+                          <span id="user-balance">0</span><span class="busd"> BNB</span>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                    <br>
+                    <br>
+                  <div class="btn-container">
+                    <strong style="padding-left: 5px; padding-bottom: 5px" ;>
+                      <span style="font-size: 16px;">1.</span><!-- <i class="bi-bank"></i> -->
+                      Deposit <span class="busd">BNB</span>
+                      <span class="usd">
+                        ( min <span class="busd" id="min-deposit">0 </span>,
+                      </span>
+                      <span class="usd">
+                        max <span class="busd" id="max-deposit">0</span> )
+                      </span>
+                      <input class="form-control" id="bnb-spend" name="buy-miners" onChange="updateBuyPrice()"
+                        step="0.1" type="number" value="0.1">
+                    </strong>
+                    <button class="start-btn" style="width: 100%;margin-bottom: 10px; margin-top: 15px;"
+                      id="buy-eggs-btn" onclick="hireFarmers()" role="button" disabled>
+                      Hire
+                      <span id="eggs-to-buy">0</span>
+                      Miners
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6" style="margin-top: 5px;">
+                <div class="deposit-container">
+                  <div class="miners-info" style="margin-bottom: unset;">
+                    <div>
+                      <i class="bi-minecart"></i>
+                      <span id="your-miners">0 </span>
+                      Miners
+                    </div>
+                    <div>
+                      <i class="bi-arrow-down-short" style="font-size: 20px;"></i>
+                    </div>
+                    <div style="font-size: 20px;">
+                      <i class="ri-coins-line ri-1x"></i>
+                      <strong id="mined">0</strong>
+                      <span><strong class="busd">BNB</strong></span>
+                    </div>
+                    <i class="bi-hourglass-split"></i>
+                    Cart will be full in: <span id="claim-timer">00:00:00</span>
+                  </div>
+                    <br>
+                    <br>
+                    <!-- <span class="usd" style="font-size: 14px;">
+                    ≈ $<span id="mined-usd" >0 </span> USD
+                  </span> -->
+                  <div class="timer" style="color:white;">
+                    <i class="bi bi-clock"></i>
+                    Hire bonus activated in: <span id="compound-timer"> --:--:--</span>
+                  </div>
+                    <div>
+                      <button class="btn start-btn" style="width: 98%;" id="reinvest" onclick="hireMoreFarmers()"
+                        role="button" disabled>
+                        Hire More Miners
+                        <span class="compound">
+                          (<span class="compound" id="compound-bonus">+0%</span>)
+                        </span>
+                      </button>
+                    </div>
+                    <br>
+                  
+                  <div>
+                    <button class="btn start-btn" style="width: 98%;" id="withdraw" onclick="sellCrops()">
+                      Withdraw
+                    </button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 referral-link">
+                <div class="mt-1" style="padding: 25px; font-size: 15px; font-weight: 500;">
+                  Every time you compound without withdrawing, your compound bonus grows by
+                  <span id="compound-percent">0%</span>
+                  (max <span id="max-compound">+0%</span>). <br>Withdrawing will reset your bonus to 0.
+                  <br>
+                  <!--  Time until next compound bonus is activated: <span style="font-weight: 700;" id="compound-timer">00:00:00</span> -->
+                </div>
+              </div>
+
+              <div class="col-lg-12 referral-link">
+                <span>
+                  <i class="bi-check2-square"></i>
+                  Earn
+                  <span id="ref-percent">0%</span>
+                  <span>when someone uses your referral link!</span>
+                  <span>
+                    <a id="reflink"></i></a><span onclick="copyRef()"><i class="ri-file-copy-line"></i><span
+                        id="copied"></span>
+                    </span>
+                  </span>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 referral-link">
+                  <span>
+                    <i class="bi-check2-square"></i>
+                    <span>Referral Bonus goes straight into your wallet</span>
+                      </span>
+                    </span>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Dashboard Section -->
+    
+    </main><!-- End #main -->
+    <br>
+    <br>
+  
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <div class="col-lg-12 referral-link">
+  
+     
+      &nbsp; &nbsp;
+      <a href="https://www.apeoclock.com/" target="_blank"><img
+        style="height: 100%; width: 50px; font-family: cursive;"
+        src="assets/img/ape.png" alt=""></a>
+        
+        &nbsp; &nbsp;
+        <a href="https://defigems.info/launches/" target="_blank"><img
+    style="height: 100%; width: 58px; font-family: cursive;"
+    src="assets/img/dg.png" alt=""></a>
+    </h4>
+    &nbsp; &nbsp;
+    <a href="https://minertracker.live/" target="_blank"><img
+  style="height: 100%; width: 50px; font-family: cursive;"
+  src="assets/img/mt.png" alt=""></a>
+  </h4></div>
+    </div><br/>
+  
+     
+     
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; 2022 <img
+          style="height: 100%; width: 20px; font-family: cursive;"
+          src="assets/img/cropslogo1.png" alt=""><strong><span style="color: #39bcf4;">United Team</span></strong>. 
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/timer.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/main_eth.js"></script>
+  </body>
+
+</html>
